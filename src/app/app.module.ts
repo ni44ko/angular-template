@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './feature/home/home.component';
-
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +14,7 @@ import { HomeComponent } from './feature/home/home.component';
     HomeComponent
   ],
   imports: [
+    CoreModule,
     BrowserModule,
     AppRoutingModule,
     SharedModule,
